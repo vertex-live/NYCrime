@@ -1,6 +1,6 @@
 
 import pandas as pd
-import requests, csv, json, datetime
+import requests, json, datetime
 
 r = requests.get('https://data.ny.gov/resource/ca8h-8gjq.json?$limit=20000')
 json_data = json.loads(r.text)
